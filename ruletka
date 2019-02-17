@@ -1,0 +1,14 @@
+import random
+a = int(random.randint(1,7))
+c = int(random.randint(1,7))
+print('Игра Русская рулетка, нажмите любую клавишу для продолжения...')
+input()
+b = input('Крутите барабан\n')
+while a != c:
+    print ('Ячейка номер '  + str(c) + ', Крутите барабан')
+    input()
+    c = random.randint(1,7)
+    if a == c:
+        print('Ты убит, Ячейка номер ' + str(c) + ', Пуля в слоте ' + str(a))
+        break
+
